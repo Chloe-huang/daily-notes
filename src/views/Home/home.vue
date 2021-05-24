@@ -1,15 +1,16 @@
 <template lang="pug">
   div.home-page
     ul.notes-content
-      li.note-item(@click="jumpTo") if else多层嵌套问题
+      li.note-item(@click="jumpTo('more-if-else')") if else多层嵌套问题
+      li.note-item(@click="jumpTo('kform')") form表单组件封装
     
 </template>
 <script>
 export default {
   name: 'home',
   methods: {
-    jumpTo() {
-      this.$router.push({ path: '/more-if-else' });
+    jumpTo(path) {
+      this.$router.push({ path });
     },
   },
 };

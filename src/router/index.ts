@@ -14,6 +14,11 @@ const routes: Array<RouteConfig> = [
     name: 'more-if-else',
     component: () => import('@/views/more-if-else/main.vue'),
   },
+  {
+    path: '/kform',
+    name: 'kform',
+    component: () => import('@/views/Form/main.vue'),
+  },
 ];
 
 const router = new VueRouter({
