@@ -19,6 +19,11 @@ const routes: Array<RouteConfig> = [
     name: 'kform',
     component: () => import('@/views/Form/main.vue'),
   },
+  {
+    path: '/toast',
+    name: 'toast',
+    component: () => import('@/views/Toast/main.vue'),
+  },
 ];
 
 const router = new VueRouter({
